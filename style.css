@@ -1,0 +1,30 @@
+
+.triangle{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    clip-path: polygon(150px 0px, 350px 0, 500px 150px, 500px 350px, 350px 500px, 150px 500px, 0 350px, 0 150px);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-name: triangle;
+}
+
+@keyframes triangle{
+    0%, 10%{
+    clip-path: polygon(250px 0px, 250px 0, 500px 100px, 500px 400px, 250px 500px, 250px 500px, 0 400px, 0 100px);
+    }
+    20%, 30%{
+        clip-path: polygon(250px 0px, 250px 0, 500px 100px, 350px 500px, 250px 500px, 250px 500px, 150px 500px, 0 100px);
+    }
+    40%, 50%{
+        clip-path: polygon(250px 0px, 250px 0, 500px 100px, 350px 500px, 250px 500px, 250px 500px, 150px 500px, 0 100px);
+    }
+    60%, 70%{
+
+    }
+}
